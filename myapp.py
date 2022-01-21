@@ -18,9 +18,9 @@ df_currency3 = pd.read_csv("./data/currency.csv", parse_dates = ["Date"], usecol
 df_currency2.rename(columns={'Indonesian Rupiah':'Rupiah'}, inplace=True)
 df_currency3.rename(columns={'Japanese Yen':'Yen'}, inplace=True)
 
-df_currency1['Date'] = pd.to_datetime(df_currency['Date'])
-df_currency2['Date'] = pd.to_datetime(df_currency['Date'])
-df_currency3['Date'] = pd.to_datetime(df_currency['Date'])
+df_currency1['Date'] = pd.to_datetime(df_currency1['Date'])
+df_currency2['Date'] = pd.to_datetime(df_currency2['Date'])
+df_currency3['Date'] = pd.to_datetime(df_currency3['Date'])
 
 start_date = '01-01-2017'
 end_date = '05-01-2018'
