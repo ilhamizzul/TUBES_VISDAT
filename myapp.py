@@ -3,14 +3,13 @@ import numpy as np
 from datetime import date
 
 # Bokeh libraries
-from bokeh.io import curdoc, output_file, output_notebook
-from bokeh.plotting import figure, show, reset_output
+from bokeh.io import show, save, output_file, output_notebook
+from bokeh.plotting import figure, reset_output, curdoc
 from bokeh.models import ColumnDataSource, Legend
 from bokeh.models.widgets import Tabs, Panel
 from bokeh.models import HoverTool
 from bokeh.models.widgets import DateRangeSlider
 from bokeh.layouts import column, row, layout
-from bokeh.io import curdoc
 
 df_currency1 = pd.read_csv("./data/currency.csv", parse_dates = ["Date"], usecols=['Date', 'Euro', 'U.S. Dollar'])
 df_currency2 = pd.read_csv("./data/currency.csv", parse_dates = ["Date"], usecols=['Date', 'Indonesian Rupiah', 'U.S. Dollar'])
