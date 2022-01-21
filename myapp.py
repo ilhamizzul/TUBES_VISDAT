@@ -3,7 +3,7 @@ import numpy as np
 from datetime import date
 
 # Bokeh libraries
-from bokeh.io import output_file, output_notebook
+from bokeh.io import curdoc, output_file, output_notebook
 from bokeh.plotting import figure, show, reset_output
 from bokeh.models import ColumnDataSource, Legend
 from bokeh.models.widgets import Tabs, Panel
