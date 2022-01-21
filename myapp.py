@@ -167,8 +167,8 @@ yen_tab = Panel(child=yen_layout, title='Yen')
 
 tabs = Tabs(tabs=[euro_tab, rupiah_tab, yen_tab])
 
-# show(tabs)
+show(tabs)
 
-save(tabs, filename="myapp.html")
+# save(tabs, filename="myapp.html")
 
-curdoc().add_root(tabs)
+# curdoc().add_root(tabs)
