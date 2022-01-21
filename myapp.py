@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from datetime import date
 
 # Bokeh libraries
 from bokeh.io import output_file, output_notebook
@@ -7,7 +8,6 @@ from bokeh.plotting import figure, show, reset_output
 from bokeh.models import ColumnDataSource, Legend
 from bokeh.models.widgets import Tabs, Panel
 from bokeh.models import HoverTool
-from datetime import date
 from bokeh.models.widgets import DateRangeSlider
 from bokeh.layouts import column, row, layout
 from bokeh.io import curdoc
@@ -167,4 +167,8 @@ yen_tab = Panel(child=yen_layout, title='Yen')
 
 tabs = Tabs(tabs=[euro_tab, rupiah_tab, yen_tab])
 
-show(tabs)
+# show(tabs)
+
+save(tabs, filename="myapp.html")
+
+curdoc().add_root(tabs)
