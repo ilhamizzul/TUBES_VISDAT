@@ -161,9 +161,6 @@ yen_date_slider = DateRangeSlider(value=(min(df['Date']), max(df['Date'])),
 yen_date_slider.js_link("value", fig_yen.x_range, "start", attr_selector=0)
 yen_date_slider.js_link("value", fig_yen.x_range, "end", attr_selector=1)
 
-# Menampilkan ke plot HTML
-output_file('Kelompok 4.html', title='3 nations currency kurs to U.S dollar')
-
 euro_tools = column(euro_date_slider)
 rupiah_tools = column(rupiah_date_slider)
 yen_tools = column(yen_date_slider)
